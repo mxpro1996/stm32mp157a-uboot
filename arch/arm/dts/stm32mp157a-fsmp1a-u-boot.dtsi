@@ -55,9 +55,10 @@
 	clocks = <&rcc SPI2>, <&rcc SPI2_K>, <&rcc PLL3_Q>, <&rcc PLL3_R>;
 };
 
-&pmic {
-	u-boot,dm-pre-reloc;
-};
+// Mark for i2c4-pmic removed
+// &pmic {
+// 	u-boot,dm-pre-reloc;
+// };
 
 &rcc {
 	st,clksrc = <
